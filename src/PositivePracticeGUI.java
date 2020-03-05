@@ -44,7 +44,7 @@ public class PositivePracticeGUI extends javax.swing.JFrame {
         });
 
         lblQuoteGenerated.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        lblQuoteGenerated.setText("jLabel1");
+        lblQuoteGenerated.setText("Quote Here");
 
         lblQuotePrompt.setText("Need Some Quotes? Press the button below...");
 
@@ -91,7 +91,47 @@ public class PositivePracticeGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         int quote;
-        quote = (int)math.round(Math.random()1-8);
+        quote = (int)Math.round(Math.random()*7+1);
+        
+        switch(quote){
+            case 1:
+                lblQuoteGenerated.setText("Everyday is a new page in a 365 page book");
+                 }
+        switch (quote){
+            case 2:
+                lblQuoteGenerated.setText("I think you are wonderful member of society!");
+                }
+        switch (quote){
+            case 3:
+                lblQuoteGenerated.setText("You are like a quadractic function that has a positive a value and a positive k value... no where to go but up!");
+        }
+        switch (quote){
+            case 4:
+                lblQuoteGenerated.setText("You are like number 2... the best prime number of your kind... oh wait it is even...");
+        }
+        switch (quote){
+            case 5:
+                lblQuoteGenerated.setText("You would be the survivor of a William Spakespeare play");
+                
+                
+        }
+//        if (quote = 1){
+//            lblQuoteGenerated.setText("Everyday is a new page in a 365 page book!"); 
+//        }
+//        else if (quote = 2){
+//            lblQuoteGenerated.setText("I think you are wonderful member of society!");
+//            
+//            else if (quote = 2){
+//                    lblQuoteGenerated.setText("You are like a quadractic function that has a positive a value and a positive k value... no where to go but up!");
+//                    }
+//            else if (quote = 3){
+//                    lblQuoteGenerated.setText("You are like number 2... the best prime number of your kind... get it even...");
+//                    }
+//            else if (quote = 4){
+//                    
+//                    }
+//        }
+        
         
         
     }//GEN-LAST:event_btnQuoteActionPerformed
