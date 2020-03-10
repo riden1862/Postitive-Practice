@@ -53,31 +53,33 @@ public class PositivePracticeGUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(176, 176, 176)
-                .addComponent(lblQuoteGenerated)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
+                .addGap(62, 62, 62)
                 .addComponent(lblQuotePrompt)
-                .addGap(86, 86, 86))
+                .addContainerGap(283, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(lblPositivePractice))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addComponent(btnQuote)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(120, 120, 120)
+                                .addComponent(lblPositivePractice))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(132, 132, 132)
+                                .addComponent(btnQuote)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblQuoteGenerated, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(lblPositivePractice)
-                .addGap(31, 31, 31)
-                .addComponent(lblQuotePrompt)
                 .addGap(28, 28, 28)
+                .addComponent(lblQuotePrompt)
+                .addGap(31, 31, 31)
                 .addComponent(btnQuote)
                 .addGap(32, 32, 32)
                 .addComponent(lblQuoteGenerated)
@@ -92,28 +94,45 @@ public class PositivePracticeGUI extends javax.swing.JFrame {
         
         int quote;
         quote = (int)Math.round(Math.random()*7+1);
-        
+        // when quote is case 1 display the following quote.
         switch(quote){
             case 1:
                 lblQuoteGenerated.setText("Everyday is a new page in a 365 page book");
                  }
+        //when the quote is case 2 display the quote below.
         switch (quote){
             case 2:
                 lblQuoteGenerated.setText("I think you are wonderful member of society!");
                 }
+        //when math.round(Math.random()) outputs a value of 3, display this quote. 
         switch (quote){
             case 3:
                 lblQuoteGenerated.setText("You are like a quadractic function that has a positive a value and a positive k value... no where to go but up!");
         }
+        //when the quote is drawn as 4, display this quote
         switch (quote){
             case 4:
                 lblQuoteGenerated.setText("You are like number 2... the best prime number of your kind... oh wait it is even...");
         }
+        //when the quote is picked as 5, display the quote below
         switch (quote){
             case 5:
                 lblQuoteGenerated.setText("You would be the survivor of a William Spakespeare play");
-                
-                
+        }
+        switch (quote) {
+        //when 6 is picked show the following
+            case 6:
+                lblQuoteGenerated.setText("If someone has ever told you that you are crazy they may be right.... but don't worry! All of the pest people are!");
+        }
+        //when 7 is the switch case that is picked display the following
+        switch (quote) {
+            case 7:
+                lblQuoteGenerated.setText("Tomorrow us yours to win!");      
+        }
+        //when 8 is picked display this quote through lblQuoteGenerated 
+        switch (quote) {
+            case 8:
+                lblQuoteGenerated.setText("You are a very nifty person!");
         }
 //        if (quote = 1){
 //            lblQuoteGenerated.setText("Everyday is a new page in a 365 page book!"); 
